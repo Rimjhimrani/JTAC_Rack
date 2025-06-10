@@ -47,9 +47,9 @@ def format_part_no(part_no):
         split_point = len(part_no) - 5
         part1 = part_no[:split_point]
         part2 = part_no[-5:]
-        return Paragraph(f"<b><font size=25>{part1}</font><font size=28>{part2}</font></b><br/><br/>", bold_style)
+        return Paragraph(f"<b><font size=22>{part1}</font><font size=25>{part2}</font></b><br/><br/>", bold_style)
     else:
-        return Paragraph(f"<b><font size=25>{part_no}</font></b><br/><br/>", bold_style)
+        return Paragraph(f"<b><font size=22>{part_no}</font></b><br/><br/>", bold_style)
 
 def format_description(desc):
     """Format description text with proper wrapping."""
